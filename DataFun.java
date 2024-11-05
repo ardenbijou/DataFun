@@ -1,12 +1,13 @@
-// any imports here
+import java.util.Scanner
 
 /**
      * Description goes here
-     * @author [Student Name]
-     * @version [Current Date]
+     * @author arden
+     * @version 11/5/24
      */
 public class DataFun{
     public static void main(String[] args){
-        
+        Scanner intscanner = new Scanner;
+        int lint =
     }
 }
