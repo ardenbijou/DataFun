@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import static jdk.vm.ci.meta.JavaKind.Int;
-
 /**
      * Description goes here
      * @author arden
@@ -32,7 +30,53 @@ public class DataFun{
         } else {
             System.out.println("it's an odd number,");
         }
-        switch (favnum)
+        System.out.print("and ");
+        switch (favnum) {
+            case 2:
+                System.out.println("it's the atomic number for helium");
+                break;
+            case 10:
+                System.out.println("it's the atomic number for neon");
+                break;
+            case 18:
+                System.out.println("it's the atomic number for argon");
+                break;
+            case 36:
+                System.out.println("it's the atomic number for krypton");
+                break;
+            case 54:
+                System.out.println("it's the atomic number for xenon");
+                break;
+            case 88:
+                System.out.println("it's the atomic number for radon");
+                break;
+            default:
+                System.out.println("it's not the atomic number of a noble gas");
         }
 
-    }
+
+        System.out.println();
+        System.out.println("now, what's your favorite character?");
+        String og = input.nextLine();
+        char ch = og.charAt(0);
+
+        if(ch >= 'A') {
+            if(ch <= 'Z') {
+                System.out.println(ch + " is an uppercase letter,");
+            }} else if(ch >= 'a') {
+                if(ch <= 'z') {
+                    System.out.println(ch + " is a lowercase letter");
+                }} else if(ch >= '0') {
+            if(ch <= '9') {
+                System.out.println(ch + " is a numeric digit,");
+            }}
+
+        switch(ch) {
+            case 'A':
+            case 'E':
+            case 'I':
+                System.out.println("it's a vowel, ");
+                break;
+        }
+        }
+        }
